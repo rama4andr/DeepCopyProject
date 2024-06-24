@@ -48,6 +48,40 @@ public class CopyUtils {
 
             return arrayCopy;
         }
+
+        if (origObject instanceof Collection<?> collection) {
+
+            Collection<Object> collectionCopy;
+            if (origObject instanceof List<?>) {
+                collectionCopy = new ArrayList<>();
+            } else {
+                collectionCopy = new HashSet<>();
+            }
+
+            visitedObjectMap.put(origObject, collectionCopy);
+
+            for (Object element : collection) {
+                collectionCopy.add(recursiveCopy(element, visitedObjectMap));
+            }
+
+            return collectionCopy;
+        }
+
+        if (origObject instanceof Map<?, ?> map) {
+
+            Map<Object, Object> mapCopy = new HashMap<>();
+
+            visitedObjectMap.put(origObject, mapCopy);
+
+            for (Map.Entry<?, ?> element : map.entrySet()) {
+                mapCopy.put(
+                        recursiveCopy(element.getKey(), visitedObjectMap),
+                        recursiveCopy(element.getValue(), visitedObjectMap)
+                );
+            }
+
+            return mapCopy;
+        }
         return null;
     }
 }
