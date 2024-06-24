@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33b83d8f-de27-423c-b0a7-dec8bb8baed2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DeepCopyProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/Man.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/arrayClass/ArrayHolder.java" afterDir="false" />
+    <list default="true" id="33b83d8f-de27-423c-b0a7-dec8bb8baed2" name="Changes" comment="TEST: added new test elements: ArrayHolder&#10;bugfix: &quot;java.lang.NoSuchMethodException: java.lang.Integer.&lt;init&gt;() : ArrayHolder&quot;: need check wrapper classes, added fix at CopyUtils.java">
       <change afterPath="$PROJECT_DIR$/src/objects/collection/CollectionHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/innerClass/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/objects/innerClass/Citizen.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/objects/mapClass/MapHolder.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/objects/recoursiveClass/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/util/CopyUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +37,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="CopyUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="util.CopyUtils" />
@@ -99,8 +88,72 @@
       <updated>1718540639133</updated>
       <workItem from="1718540640840" duration="5057000" />
       <workItem from="1718909133679" duration="9200000" />
-      <workItem from="1719256126482" duration="6548000" />
+      <workItem from="1719256126482" duration="8579000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1719263062596</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1719263062596</updated>
+    </task>
+    <task id="LOCAL-00002" summary="WIP: Added CopyUtils with deepCopy method">
+      <created>1719263405609</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719263405609</updated>
+    </task>
+    <task id="LOCAL-00003" summary="WIP: Added primitive check and array check, class Man">
+      <created>1719263574155</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719263574155</updated>
+    </task>
+    <task id="LOCAL-00004" summary="WIP: class Man">
+      <created>1719263627301</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719263627301</updated>
+    </task>
+    <task id="LOCAL-00005" summary="WIP: added collection and map copy">
+      <created>1719263767561</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719263767561</updated>
+    </task>
+    <task id="LOCAL-00006" summary="WIP: added inner objects copy (getDeclaredFields().getInstance())">
+      <created>1719263973438</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719263973438</updated>
+    </task>
+    <task id="LOCAL-00007" summary="First try">
+      <created>1719264115046</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719264115046</updated>
+    </task>
+    <task id="LOCAL-00008" summary="TEST: added new test elements: Citizen and Address, Address will be inner class of class Citizen">
+      <created>1719264422190</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719264422190</updated>
+    </task>
+    <task id="LOCAL-00009" summary="TEST: added new test elements: ArrayHolder&#10;bugfix: &quot;java.lang.NoSuchMethodException: java.lang.Integer.&lt;init&gt;() : ArrayHolder&quot;: need check wrapper classes, added fix at CopyUtils.java">
+      <created>1719264704520</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719264704520</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,5 +169,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="WIP: Added CopyUtils with deepCopy method" />
+    <MESSAGE value="WIP: Added primitive check and array check, class Man" />
+    <MESSAGE value="WIP: class Man" />
+    <MESSAGE value="WIP: added collection and map copy" />
+    <MESSAGE value="WIP: added inner objects copy (getDeclaredFields().getInstance())" />
+    <MESSAGE value="First try" />
+    <MESSAGE value="TEST: added new test elements: Citizen and Address, Address will be inner class of class Citizen" />
+    <MESSAGE value="TEST: added new test elements: ArrayHolder&#10;bugfix: &quot;java.lang.NoSuchMethodException: java.lang.Integer.&lt;init&gt;() : ArrayHolder&quot;: need check wrapper classes, added fix at CopyUtils.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="TEST: added new test elements: ArrayHolder&#10;bugfix: &quot;java.lang.NoSuchMethodException: java.lang.Integer.&lt;init&gt;() : ArrayHolder&quot;: need check wrapper classes, added fix at CopyUtils.java" />
   </component>
 </project>
