@@ -82,6 +82,48 @@ public class CopyUtils {
 
             return mapCopy;
         }
-        return null;
+
+        Constructor<?> defaultConstructor;
+        try {
+            defaultConstructor = origObject.getClass().getDeclaredConstructor();
+
+            Object objectCopy = defaultConstructor.newInstance();
+
+            visitedObjectMap.put(origObject, objectCopy);
+
+            for (Field field : origObject.getClass().getDeclaredFields()) {
+                field.setAccessible(true);
+                Object fieldValue = field.get(origObject);
+
+                if (field.getType().isPrimitive()) {
+                    if (field.getType() == boolean.class) {
+                        field.setBoolean(objectCopy, field.getBoolean(origObject));
+                    } else if (field.getType() == byte.class) {
+                        field.setByte(objectCopy, field.getByte(origObject));
+                    } else if (field.getType() == char.class) {
+                        field.setChar(objectCopy, field.getChar(origObject));
+                    } else if (field.getType() == short.class) {
+                        field.setShort(objectCopy, field.getShort(origObject));
+                    } else if (field.getType() == int.class) {
+                        field.setInt(objectCopy, field.getInt(origObject));
+                    } else if (field.getType() == long.class) {
+                        field.setLong(objectCopy, field.getLong(origObject));
+                    } else if (field.getType() == float.class) {
+                        field.setFloat(objectCopy, field.getFloat(origObject));
+                    } else if (field.getType() == double.class) {
+                        field.setDouble(objectCopy, field.getDouble(origObject));
+                    }
+                } else {
+                    field.set(objectCopy, recursiveCopy(fieldValue, visitedObjectMap));
+                }
+            }
+            return objectCopy;
+
+        } catch (NoSuchMethodException |
+                 InvocationTargetException |
+                 InstantiationException |
+                 IllegalAccessException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
