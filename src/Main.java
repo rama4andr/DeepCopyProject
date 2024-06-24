@@ -1,4 +1,5 @@
 import objects.Man;
+import objects.arrayClass.ArrayHolder;
 import objects.innerClass.Address;
 import objects.innerClass.Citizen;
 
@@ -37,5 +38,21 @@ public class Main {
         System.out.println("Modification:");
         System.out.println("Original: " + citizen);
         System.out.println("Copy: " + copyCitizen);
+        System.out.println("-------------------------------");
+
+        ArrayHolder arrayHolder = new ArrayHolder(new int[]{2, 4, 1}, new String[]{"B", "B", "C"});
+        ArrayHolder copyArray = deepCopy(arrayHolder);
+
+        System.out.println("Original: " + arrayHolder);
+        System.out.println("Copy: " + copyArray);
+
+        copyArray.getIntArray()[0] = 1;
+        copyArray.getIntArray()[1] = 2;
+        copyArray.getIntArray()[2] = 3;
+        copyArray.getStringArray()[0] = "A";
+
+        System.out.println("Modification:");
+        System.out.println("Original: " + arrayHolder);
+        System.out.println("Copy: " + copyArray);
     }
 }

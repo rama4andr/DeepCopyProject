@@ -31,6 +31,12 @@ public class CopyUtils {
             return origObject;
         }
 
+        if (origObject instanceof Integer || origObject instanceof Double || origObject instanceof Boolean ||
+                origObject instanceof Byte || origObject instanceof Character || origObject instanceof Float ||
+                origObject instanceof Long || origObject instanceof Short) {
+            return origObject;
+        }
+
         if (visitedObjectMap.containsKey(origObject)) {
 
             return visitedObjectMap.get(origObject);
