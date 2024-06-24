@@ -40,4 +40,13 @@ public class Man {
     public void setFavoriteBooks(List<String> favoriteBooks) {
         this.favoriteBooks = favoriteBooks;
     }
+
+    @Override
+    public String toString() {
+        return "Man{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", favoriteBooks=" + favoriteBooks +
+                '}';
+    }
 }
